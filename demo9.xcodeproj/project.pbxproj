@@ -16,6 +16,9 @@
 		D2E908B323DD6CFF005AA229 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E908B123DD6CFF005AA229 /* LaunchScreen.storyboard */; };
 		D2E908BE23DD6CFF005AA229 /* demo9Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E908BD23DD6CFF005AA229 /* demo9Tests.swift */; };
 		D2E908C923DD6CFF005AA229 /* demo9UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E908C823DD6CFF005AA229 /* demo9UITests.swift */; };
+		D2E908D923DD6EFC005AA229 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E908D823DD6EFC005AA229 /* Webservice.swift */; };
+		D2E908DC23DD6F1B005AA229 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E908DB23DD6F1B005AA229 /* Post.swift */; };
+		D2E908DF23DD71BE005AA229 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E908DE23DD71BE005AA229 /* PostListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		D2E908C423DD6CFF005AA229 /* demo9UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demo9UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E908C823DD6CFF005AA229 /* demo9UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo9UITests.swift; sourceTree = "<group>"; };
 		D2E908CA23DD6CFF005AA229 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2E908D823DD6EFC005AA229 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		D2E908DB23DD6F1B005AA229 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D2E908DE23DD71BE005AA229 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 		D2E908A223DD6CFC005AA229 /* demo9 */ = {
 			isa = PBXGroup;
 			children = (
+				D2E908DD23DD7185005AA229 /* View Models */,
+				D2E908DA23DD6F03005AA229 /* Models */,
+				D2E908D723DD6ED3005AA229 /* Services */,
 				D2E908A323DD6CFC005AA229 /* AppDelegate.swift */,
 				D2E908A523DD6CFC005AA229 /* SceneDelegate.swift */,
 				D2E908AA23DD6CFC005AA229 /* ContentView.swift */,
@@ -137,6 +146,30 @@
 				D2E908CA23DD6CFF005AA229 /* Info.plist */,
 			);
 			path = demo9UITests;
+			sourceTree = "<group>";
+		};
+		D2E908D723DD6ED3005AA229 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D2E908D823DD6EFC005AA229 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D2E908DA23DD6F03005AA229 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2E908DB23DD6F1B005AA229 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2E908DD23DD7185005AA229 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2E908DE23DD71BE005AA229 /* PostListViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E908DF23DD71BE005AA229 /* PostListViewModel.swift in Sources */,
 				D2E908A923DD6CFC005AA229 /* demo9.xcdatamodeld in Sources */,
 				D2E908A423DD6CFC005AA229 /* AppDelegate.swift in Sources */,
 				D2E908AB23DD6CFC005AA229 /* ContentView.swift in Sources */,
+				D2E908DC23DD6F1B005AA229 /* Post.swift in Sources */,
+				D2E908D923DD6EFC005AA229 /* Webservice.swift in Sources */,
 				D2E908A623DD6CFC005AA229 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
